@@ -1,0 +1,15 @@
+/* ── Footer ── */
+
+footer {
+  background: #1a1a2e;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border-top: 2px solid #646cff;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #888;
+}

@@ -1,0 +1,54 @@
+/* ── Demo Page ── */
+
+.demo-container {
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.demo-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #646cff;
+  margin-bottom: 1.5rem;
+}
+
+.resume-preview {
+  text-align: left;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(100, 108, 255, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+}
+
+.resume-preview h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #61dafb;
+}
+
+.resume-preview h3 {
+  font-size: 1.15rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.25rem;
+  color: #646cff;
+  border-bottom: 1px solid rgba(100, 108, 255, 0.2);
+  padding-bottom: 0.25rem;
+}
+
+.resume-preview p {
+  margin: 0.35rem 0;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  .resume-preview {
+    background: #ffffff;
+    border-color: #e0e0e0;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  }
+}

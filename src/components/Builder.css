@@ -1,0 +1,96 @@
+/* ── Builder Form ── */
+
+.builder-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(100, 108, 255, 0.2);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+}
+
+.builder-container h1 {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #646cff;
+}
+
+.builder-container hr {
+  border: none;
+  border-top: 1px solid rgba(100, 108, 255, 0.15);
+  margin: 0.5rem 0;
+}
+
+.builder-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.builder-container input[type="text"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  color: inherit;
+  outline: none;
+  transition: border-color 0.25s, box-shadow 0.25s;
+  box-sizing: border-box;
+}
+
+.builder-container input[type="text"]:focus {
+  border-color: #646cff;
+  box-shadow: 0 0 0 3px rgba(100, 108, 255, 0.25);
+}
+
+.builder-container input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.builder-container button[type="submit"] {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #646cff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  align-self: center;
+}
+
+.builder-container button[type="submit"]:hover {
+  background: #535bf2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(100, 108, 255, 0.4);
+}
+
+/* Light mode overrides */
+@media (prefers-color-scheme: light) {
+  .builder-container {
+    background: #ffffff;
+    border-color: #e0e0e0;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .builder-container input[type="text"] {
+    background: #f5f5f5;
+    border-color: #ddd;
+    color: #213547;
+  }
+
+  .builder-container input[type="text"]::placeholder {
+    color: #999;
+  }
+
+  .builder-container hr {
+    border-top-color: #e0e0e0;
+  }
+}
